@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Daxx.TestTask.Web", "Daxx.TestTask.Web\Daxx.TestTask.Web.csproj", "{AC477043-087D-4FF0-904C-BA6EE8635AA2}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{731B979B-AF5B-4C05-A8A3-6040F86A9F50}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{925274EC-EBE2-4436-BC55-D95498F89414}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Daxx.TestTask.Services", "src\Daxx.TestTask.Services\Daxx.TestTask.Services.csproj", "{F6DF8716-AF67-4377-8F8A-C08E798A1BB2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Daxx.TestTask.Web", "src\Daxx.TestTask.Web\Daxx.TestTask.Web.csproj", "{4DFF9DB7-176E-43C0-B0B8-6A2B16D8056B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Daxx.TestTask.Services.Tests", "test\Daxx.TestTask.Services.Tests\Daxx.TestTask.Services.Tests.csproj", "{434F10A6-6E69-4AA0-9592-501D40461810}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Daxx.TestTask.Web.Tests", "test\Daxx.TestTask.Web.Tests\Daxx.TestTask.Web.Tests.csproj", "{A0D5DA38-8EDF-4C6E-9512-9E36CCE69D95}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +21,31 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AC477043-087D-4FF0-904C-BA6EE8635AA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AC477043-087D-4FF0-904C-BA6EE8635AA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AC477043-087D-4FF0-904C-BA6EE8635AA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AC477043-087D-4FF0-904C-BA6EE8635AA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6DF8716-AF67-4377-8F8A-C08E798A1BB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6DF8716-AF67-4377-8F8A-C08E798A1BB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6DF8716-AF67-4377-8F8A-C08E798A1BB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6DF8716-AF67-4377-8F8A-C08E798A1BB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DFF9DB7-176E-43C0-B0B8-6A2B16D8056B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DFF9DB7-176E-43C0-B0B8-6A2B16D8056B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DFF9DB7-176E-43C0-B0B8-6A2B16D8056B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DFF9DB7-176E-43C0-B0B8-6A2B16D8056B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{434F10A6-6E69-4AA0-9592-501D40461810}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{434F10A6-6E69-4AA0-9592-501D40461810}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{434F10A6-6E69-4AA0-9592-501D40461810}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{434F10A6-6E69-4AA0-9592-501D40461810}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0D5DA38-8EDF-4C6E-9512-9E36CCE69D95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0D5DA38-8EDF-4C6E-9512-9E36CCE69D95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0D5DA38-8EDF-4C6E-9512-9E36CCE69D95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0D5DA38-8EDF-4C6E-9512-9E36CCE69D95}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F6DF8716-AF67-4377-8F8A-C08E798A1BB2} = {731B979B-AF5B-4C05-A8A3-6040F86A9F50}
+		{4DFF9DB7-176E-43C0-B0B8-6A2B16D8056B} = {731B979B-AF5B-4C05-A8A3-6040F86A9F50}
+		{434F10A6-6E69-4AA0-9592-501D40461810} = {925274EC-EBE2-4436-BC55-D95498F89414}
+		{A0D5DA38-8EDF-4C6E-9512-9E36CCE69D95} = {925274EC-EBE2-4436-BC55-D95498F89414}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {060BB018-DAE1-41EA-822F-D6D25A5D7273}
